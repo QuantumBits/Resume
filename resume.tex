@@ -1,0 +1,134 @@
+\documentclass[10pt, letterpaper, sans, final]{moderncv}
+
+\moderncvstyle{banking}
+\moderncvcolor{black}
+\renewcommand{\familydefault}{\sfdefault}
+\nopagenumbers{}
+
+\usepackage[scale=0.925]{geometry}
+\usepackage{latexsym}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{etoolbox}
+
+% \singlespacing
+\onehalfspacing
+
+\name{Jesse}{Campbell}
+\title{Guidance, Navigation \& Control (GNC) Software \& Simulation Engineer}
+\social[linkedin]{JesseACampbell}
+\social[github]{QuantumBits}
+\email{JesseC@mpbell.me}
+\phone[mobile]{(949)~229-2718}
+% \quote{Physicist by training. Engineer by trade. Programmer by practice.}
+
+%% Custom Commands
+
+\newrobustcmd{\icon}[1]{\texorpdfstring{\includegraphics[height=32pt]{images/#1}}{}}
+
+\newcommand{\vcenteredinclude}[1]{\begingroup
+\setbox0=\hbox{\icon{#1}}%
+\parbox{\wd0}{\box0}\endgroup}
+
+%% Resume
+
+\begin{document}
+
+\makecvtitle
+
+
+\section{Professional Experience}
+
+\subsection{\vcenteredinclude{ispace-us.jpeg} ispace U.S.}
+
+\cventry{Dec 2023 --- Present}{\textbf{Guidance, Navigation \& Controls (GNC) Engineer}}{}{}{}{
+	\cvlistitem{Leading development of the ispace Simulation Environment (iSE), a deterministic event-driven simulation environment written in C\texttt{++}.}
+	\cvlistitem{Responsible for documenting and maintaining GNC software standards and best practices, including for writing flight software in C\texttt{++}.}
+	\cvlistitem{Responsible for building and maintaining GNC's (on-premise) Gitlab CI/CD pipeline infrastructure for automating development tasks.}
+	\cvlistitem{Leading integration process of GNC algorithms (written in C\texttt{++}) into final GNC flight software product.}
+}
+
+\subsection{\vcenteredinclude{maxar.jpeg} Maxar Space (formerly Space Systems / Loral) [8 Years 5 Months]}
+
+\cventry{Nov 2023 --- Dec 2023}{\textbf{Software Systems Engineer}}{}{}{Senior Staff}{
+	\cvlistitem{Promotion, same responsibilities as previous role.}
+}
+
+\cventry{Feb 2023 --- Nov 2023}{\textbf{Software Systems Engineer}}{}{}{Staff}{
+	\cvlistitem{Title change, same responsibilities as previous role.}
+}
+
+\cventry{Jun 2022 --- Feb 2023}{\textbf{Dynamics, Controls and Analysis (DCA) Engineer}}{}{}{}{
+	\cvlistitem{Formal transfer to DCA from GNC Systems. Discontinued tasks for the GNC Systems department in order to focus on DCA tasks.}
+	\cvlistitem{During this time, transferred to working on the T1TRK program, where I lead the effort to build the next iteration of the SSL500 bus simulation environment originally used on the WorldView Legion program.}
+}
+
+\cventry{Mar 2019 --- Jun 2022}{\textbf{GNC Systems Engineer}}{}{}{}{
+	Split time between Dynamics Controls and Analysis (DCA) and GNC Systems departments. \\
+	\cvlistitem{For DCA, designed flight software in Matlab/Simulink (autocoded to C/C\texttt{++}) for onboard orbit determination on the SSL500 Legion-Class spacecraft bus, as well as high fidelity orbital dynamics simulation software used in testing. Lead dev-ops efforts for the WorldView Legion ACS subsystem flight software development team, specifically Gitlab CI/CD.}
+	\cvlistitem{For GNC Systems, led effort to rewrite legacy software into the Julia programming language from FORTRAN77.}
+}
+
+\cventry{Feb 2018 --- Mar 2019}{\textbf{Misison Analysis \& Design Engineer}}{}{}{}{
+	\cvlistitem{Designed mission plans and provided analyses for geostationary spacecraft, including propellant budgets, maneuver plans and electric orbit raising analyses. Programs included Star One D2, SiriusXM-7 \& 8, and BSat-4b.}
+	\cvlistitem{Supported orbit raising operations, including maneuver planning and orbit determination, for programs including Telstar 18V and Azerspace-2.}
+	\cvlistitem{Contributed to orbit propagation flight software for programs such as SiriusXM-7 and RESTORE-L.}
+}
+
+\cventry{Jul 2016 --- Feb 2018}{\textbf{Orbit Dynamics Engineer}}{}{}{}{
+	\cvlistitem{Responsibilities overlapped with CVE role for approximately one year as I worked to bring the BulgariaSat-1 mission to a successful launch.}
+	\cvlistitem{Provided cradle-to-graveyard-orbit analyses for geostationary spacecraft, such as propellant budgeting, orbit-raising maneuver planning, electric propulsion analyses, and on-orbit station-keeping operations. Contributed to programs such as BulgariaSat-1, JC-Sat-14/15/16, Echostar-18/19/21/23, AsiaSat-9, NASA's Restore-L, SiriusXM-7/8, Star One D2.}
+}
+
+\cventry{Jul 2015 --- Jun 2017}{\textbf{Communications Vehicle Engineer (CVE)}}{}{}{}{
+	\cvlistitem{Responsible for conducting tests of RF payload systems for commercial communications satellite programs, primarily for BulgariaSat-1.}
+	\cvlistitem{Worked with technicians in RF testing campaigns. Provided on-site launch-base support for the BulgariaSat-1 mission in Cape Canaveral, Florida.}
+	\cvlistitem{Built and maintained a full-stack web server designed to facilitate payload testing processes and provide better troubleshooting tools.}
+}
+
+\section{Educational Background}
+
+\subsection{\vcenteredinclude{uci.jpeg} University of California, Irvine}
+
+\cventry{2014}{Dynamics \& Control}{M.S. Mechanical \& Aerospace Engineering}{}{}{Master's Thesis:
+	\link[Classifications of Time-Optimal Constant-Acceleration Earth-Mars Transfers]{https://www.linkedin.com/in/jesseacampbell/overlay/50293201/single-media-viewer?type=DOCUMENT&profileId=ACoAAAemM5oBD_BdlWlrPHuR8w5rRHBwfdigkn8&lipi=urn\%3Ali\%3Apage\%3Ad_flagship3_profile_view_base\%3B\%2FWjBiKTuT5Cq9jQVskqZQA\%3D\%3D}}
+
+\cventry{2011}{Astrophysics \& Computational Physics, Applied \& Computational Math}{B.S. Physics, Mathematics}{}{}{}
+
+\section{Some Relevant Technical Skills}
+
+\begin{cvcolumns}
+	\cvcolumn{}{
+		\cvskill{5} Julia \\
+		\cvskill{5} MATLAB/Simulink \\
+		\cvskill{4} C/C\texttt{++} \\
+		\cvskill{3} Rust \\
+		\cvskill{3} Python \\
+		\cvskill{3} Bash \\
+	}
+	\cvcolumn{}{
+		\cvskill{5} Git \\
+		\cvskill{4} Gitlab CI/CD \\
+		\cvskill{3} Embedded Programming \\
+		\cvskill{2} GMAT \\
+		\cvskill{2} FreeFlyer \\
+		\cvskill{2} cFS (Core Flight System) \\
+	}
+	\cvcolumn{}{
+		\cvskill{4} Orbital Mechanics \\
+		\cvskill{3} GNC Simulation Design \\
+		\cvskill{3} GNC System Design \\
+		\cvskill{3} Orbit Determination \\
+		\cvskill{3} Numerical Optimization \\
+		\cvskill{1} Kalman Filtering \\
+	}
+\end{cvcolumns}
+
+% \cvskillplainlegend{}
+
+
+\end{document}
